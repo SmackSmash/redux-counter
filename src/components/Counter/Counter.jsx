@@ -8,6 +8,7 @@ const Counter = ({ count, decrement, increment, reset, add }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    add(Number(addition));
   };
 
   return (
