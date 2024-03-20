@@ -9,13 +9,9 @@ const Counter = () => {
 
   const handleIncrement = () => setCount(count + 1);
 
-  const handleAddition = () => {
-    setCount(count + Number(addition));
-  };
-
   const handleSubmit = e => {
     e.preventDefault();
-    handleAddition();
+    setCount(count + Number(addition));
   };
 
   return (
